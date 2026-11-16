@@ -1,0 +1,22 @@
+{
+  "title": "Measure three look-alike bars on a bench caliper and sort them into GO and NO-GO boxes against a 40.0 ± 0.5 mm tolerance",
+  "category": "Impact on jobs",
+  "keywords": [
+    "inspection",
+    "metrology",
+    "digital caliper",
+    "GO/NO-GO",
+    "tolerance",
+    "sorting",
+    "bimanual"
+  ],
+  "instruction": "Measure each bar with the caliper, then put the bars that are 39.5 to 40.5 mm long in the green box and the others in the red box.",
+  "context": "Inspectors, testers and sorters (about 600,000 US workers) check cut parts against a drawing's tolerance all day; a part out by under a millimetre looks the same as a good one, so the sort can only come from the reading. One hand sets each part between the jaws while the other closes them, then the reading decides the box.",
+  "setup": "Distances from the robot: x away from the arm bases, y to the left (+) or right (-), heights above the table top; the arm bases are at y = +0.305 (left) and -0.305 m (right). Bench caliper (fixed to the table, light grey body, dark jaws): a beam 217 mm long (x 0.130 to 0.347 m), 20 mm wide (y -0.020 to 0.000) and 6 mm tall. Fixed jaw at its far end, inner face at x 0.300, 8 mm thick, 40 mm wide (y 0.000 to +0.040), 12 mm tall. A sliding jaw of the same size faces it, carried on the beam by a carriage with an orange thumb tab behind it (10 mm in x, 30 mm wide, 26 mm tall, standing on the beam, back face at x 0.197 with the jaws open). A 15 N/m spring holds the jaws 55 mm open; pushing the tab away from the robot closes them. A polished steel platen 75 x 40 x 2 mm lies between the jaws (x 0.225 to 0.300, y 0.000 to +0.040). Display: a housing 36 x 76 x 12 mm centred at x 0.365, y -0.010 with a black screen and four green 7-segment digits 20 mm tall, reading the jaw gap in mm to 0.1 mm (55.0 at the start), upright as seen from the robot. Three aluminium bars (loose, 56 g each), each 20 mm wide (y) and 26 mm tall, lying with their lengths along x; lengths 40.3, 40.8 and 39.2 mm (bars 1 to 3). They lie in a row, bar centres at (x, y) = (0.23, 0.090) for bar 1, (0.23, 0.145) for bar 2 and (0.23, 0.200) m for bar 3. Two open trays (fixed), each 90 mm (x) by 170 mm (y) inside, 4 mm floor, 6 mm walls 30 mm tall: green (GO) centred at (0.22, 0.335), red (NO-GO) centred at (0.22, 0.530).",
+  "scoring": "Scored at the end of the trial. A bar is GO if it is 39.5 to 40.5 mm long inclusive (the 40.3 mm bar); the other two are NO-GO (40.8 and 39.2 mm). A bar is in a tray when its whole footprint is inside the tray's inner walls (1 mm allowance) and its underside is below the 30 mm wall tops; any orientation counts. Score 1.0: the GO bar in the green tray and both NO-GO bars in the red tray. Score 0 otherwise: any bar in the other tray or in neither (on the table, on the caliper, or held above a tray). The trial also ends early, at 1.0, once all three have been in their right trays for 3 s.",
+  "run_limit": "3,600 steps (3 minutes at 20 Hz)",
+  "reset_notes": "Open the caliper (it springs fully open) and clear the platen. Lay each bar on its spot (setup and README), length along x, the 26 mm side up.",
+  "fidelity": "Rigid primitives in PhysX, true-size caliper, bars and trays. The caliper is simplified: a sprung slider pushed by a thumb tab instead of a thumb wheel, a low-friction platen between the jaws, and a 7-segment display made of sprung segments that rises to show the jaw gap to 0.1 mm (real calipers read 0.01 mm). The bars differ only in length and all weigh 56 g. The helper kit (labkit) patches the arena in the task's process only.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-K2P8DM"
+}
