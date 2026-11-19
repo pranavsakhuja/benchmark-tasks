@@ -95,6 +95,9 @@ For a real trial: any plastic desktop drawer unit and organizer tray with these 
 With `--seed 1`, `2` and `5` (the pen at each of its three places) the demo scores 1.0 and ends early on success at
 35.5 s.
 
+**Dream-1** (`--seed 1`, the Dream-1 command above) scores 0. It picks the tray up from the table and holds it beside
+the drawer for the full 2,400 steps, but never puts it in. It doesn't open the drawer further or reach for the pen.
+
 **Shortcut check.** `DRAWER_CHECK=leave_pen` runs the demo but leaves the pen in the drawer. The tray lands on the pen and
 stays tipped (about 6 deg, its underside 9 mm up), and the drawer stops 180 mm out when pushed: it scores 0.25.
 
