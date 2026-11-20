@@ -18,5 +18,5 @@
   "reset_notes": "Take the tray out, lay the pen back at its place for the trial (README), and pull the drawer out to 90 mm.",
   "fidelity": "Rigid primitives in PhysX at true size. The drawer is a damped slide with 4 N of friction and a stop; the pen is a plain cylinder with a box for its clip; the tray is rigid. Nothing is soft or flexes.",
   "scores": "Dream-1 run: 0.0; demo: 1.0",
-  "media": ""
+  "media": "M-GGBYDL"
 }
