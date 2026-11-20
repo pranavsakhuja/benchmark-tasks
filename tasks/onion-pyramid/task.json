@@ -1,0 +1,21 @@
+{
+  "title": "Stack loose onions on a produce display into a pyramid, each one seated in a hollow of the layer below",
+  "category": "Impact on jobs",
+  "keywords": [
+    "grocery",
+    "stocking",
+    "produce display",
+    "stacking",
+    "round objects",
+    "placement precision"
+  ],
+  "instruction": "Stack onions from the crate on the display as a pyramid: one in each hollow of the bottom layer, then one on top.",
+  "context": "Grocery stockers, nearly 3 million US workers, build produce displays by hand every day. A round onion only stays up seated in the dip between four below it; set down on one onion's crown or at the stack's edge, it rolls off and falls.",
+  "setup": "Distances from the robot: x away from the arm bases, y to the left (+) or right (-), heights above the table top; the arm bases are at y = +0.305 and -0.305 m. Onions: 15 yellow onions, each 70 mm across (round), 170 g. Display bin (fixed to the table): pale wood, inside 214 x 214 mm, floor 6 mm thick, walls 8 mm thick and 35 mm tall above its floor, centred at (0.360, -0.030). Bottom layer: 9 onions in a 3 x 3 square on the bin's floor, 70.2 mm apart, centred in the bin. Crate (fixed to the table): green polypropylene, inside 218 mm along x by 146 mm along y, floor 6 mm, walls 8 mm thick and 25 mm tall, centred at (0.250, -0.250). In it, 6 onions in two rows of three along x, 72 mm apart along x and 72 mm apart along y, centred in the crate.",
+  "scoring": "Scored at the end of the trial. Bottom layer: onions on the display's floor. Seated: an onion at rest touching four onions of the layer below it (centres within 73 mm), each at least 30 mm lower. Second layer: onions seated on the bottom layer; top: an onion seated on the second layer. Fallen: an onion at table level or on the floor outside the display and the crate. Score: 0.2 per second-layer onion (up to 4), plus 0.2 for an onion on top, minus 0.2 per fallen onion; from 0 to 1. The trial ends early at 1.0 once that has held for 2 s with every onion at rest.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Lay the bottom layer back in its 3 x 3 square and the six onions back in the crate.",
+  "fidelity": "Rigid primitives in PhysX at true size. Each onion is a rigid sphere of one size; real onions vary a few millimetres, are slightly flattened, and have papery skins that grip and dent a little. The display bin and crate are fixed to the table.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": ""
+}
